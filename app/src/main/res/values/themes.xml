@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TodoApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="no_actionBar" parent="Theme.TodoApp">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="toolBar_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="actionBarColor">
+        <item name="android:background">@color/blue</item>
+
+    </style>
+
+    <style name="titleText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Material3.Button.ElevatedButton.PrimaryButton">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="task_text_title">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="task_text_desc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>

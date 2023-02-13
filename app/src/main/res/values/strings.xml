@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TodoAp;p</string>
+    <string name="title_tasks_List">TasksList</string>
+    <string name="setting_tasks_list">Setting_Tasks</string>
+    <string name="TaskInsertedSuccessfully">Task Inserted succesfully</string>
+    <string name="ok">Ok</string>
+</resources>
