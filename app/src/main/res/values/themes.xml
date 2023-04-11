@@ -54,4 +54,19 @@
         <item name="android:textSize">18dp</item>
     </style>
 
+    <style name="Date_Textstyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="week_TextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="header_TextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
 </resources>

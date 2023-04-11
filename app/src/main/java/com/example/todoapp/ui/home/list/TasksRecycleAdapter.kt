@@ -8,7 +8,7 @@ import com.example.todoapp.databinding.ItemTaskBinding
 
 class TasksRecycleAdapter(var items: List<Task>?) :
     RecyclerView.Adapter<TasksRecycleAdapter.ViewHolder>() {
-
+    var OnItemClicked: OnItemClicked? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val viewBinding = ItemTaskBinding.inflate(
@@ -20,6 +20,9 @@ class TasksRecycleAdapter(var items: List<Task>?) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.viewBinding.title.text = items?.get(position)?.title
         holder.viewBinding.Description.text = items?.get(position)?.description
+        holder.viewBinding.root.setOnClickListener {
+            OnItemClicked?.OnItemClick(items!![position])
+        }
 
 
     }
@@ -35,4 +38,8 @@ class TasksRecycleAdapter(var items: List<Task>?) :
     }
 
     class ViewHolder(val viewBinding: ItemTaskBinding) : RecyclerView.ViewHolder(viewBinding.root)
+}
+
+interface OnItemClicked {
+    fun OnItemClick(task: Task)
 }
